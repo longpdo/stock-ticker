@@ -10,19 +10,21 @@ minutes_between_updates = 5
 
 indices_dict = {
     '^GSPC': 'S&P 500',
-    '^DJI': 'DOW JONES 30',
-    '^IXIC': 'NASDAQ 100',
-    '^FTSE': 'FTSE 100',
+    '^DJI': 'DOW 30',
+    '^IXIC': 'NASDAQ',
     '^GDAXI': 'DAX',
-    '^FCHI': 'CAC 40',
+    '^FTSE': 'FTSE 100',
     '^STOXX50E': 'EURO STOXX 50',
-    '^N225': 'NIKKEI 225',
-    'GC=F': 'GOLD',
+}
+
+currency_dict = {
     'EURUSD=X': 'EUR/USD',
     'EURGBP=X':	'EUR/GBP',
     'EURCHF=X':	'EUR/CHF',
-    'BTC-EUR': 'BITCOIN',
-    'ETH-EUR': 'ETHEREUM'
+    'EURJPY=X': 'EUR/JPY',
+    'GC=F': 'GOLD',
+    'BTC-EUR': 'BTC',
+    'ETH-EUR': 'ETH'
 }
 
 keys_dict = {
@@ -57,14 +59,14 @@ def get_ticker_symbols():
     return ticker_symbols
 
 
-def build_index_headline():
-    index_headline = ''
-    for symbol, name in indices_dict.items():
+def build_headline(symbol_dict):
+    headline = ''
+    for symbol, name in symbol_dict.items():
         stock_info = _get_stock_info(symbol)
-        index_headline += _color_yellow(name) + ' ' + _color_white(
+        headline += _color_yellow(name) + ' ' + _color_white(
             stock_info['regularMarketPrice']) + ' ' + _color_red_green(
                 stock_info['regularMarketChangePercent']/100) + ' | '
-    return index_headline
+    return headline
 
 
 def get_all_stocks(symbols):
@@ -146,12 +148,14 @@ if __name__ == '__main__':
     symbols = get_ticker_symbols()
 
     while True:
-        index_headline = build_index_headline()
+        index_headline = build_headline(indices_dict)
+        currency_headline = build_headline(currency_dict)
         stocks = get_all_stocks(symbols)
         dataframe = build_dataframe(stocks)
 
         os.system('cls||clear')
-        print('\n' + index_headline + '\n')
+        print('\n' + index_headline)
+        print(currency_headline + '\n')
         print(dataframe)
         print('\n updated: ' + datetime.now().strftime('%H:%M:%S'))
 
