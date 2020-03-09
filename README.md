@@ -128,7 +128,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [issues-shield]: https://img.shields.io/github/issues/longpdo/stock-ticker.svg?style=flat-square
 [issues-url]: https://github.com/longpdo/stock-ticker/issues
 [license-shield]: https://img.shields.io/github/license/longpdo/stock-ticker.svg?style=flat-square
-[license-url]: https://github.com/longpdo/stock-ticker/blob/master/LICENSE.txt
+[license-url]: https://github.com/longpdo/stock-ticker/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/longpdo
 [product-screenshot]: images/example.gif
