@@ -1,9 +1,5 @@
-[![Issues][issues-shield]][issues-url]
-[![Contributors][contributors-shield]][contributors-url]
-[![MIT License][license-shield]][license-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Forks][forks-shield]][forks-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+<!-- MARKDOWN LINKS & IMAGES -->
+[product-screenshot]: images/example.gif
 
 <!-- PROJECT LOGO -->
 <br />
@@ -20,6 +16,10 @@
     <a href="https://github.com/longpdo/stock-ticker/issues">Report Bug</a>
     ·
     <a href="https://github.com/longpdo/stock-ticker/issues">Request Feature</a>
+    <br />
+    <br />
+    <a href="https://github.com/longpdo/stock-ticker/issues"><img src="https://badgen.net/github/open-issues/longpdo/stock-ticker" /></a>
+    <a href="LICENSE"><img src="https://badgen.net/github/license/longpdo/stock-ticker" /></a>
   </p>
 </p>
 
@@ -37,7 +37,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-[![Project Screenshot][product-screenshot]](https://github.com/longpdo/stock-ticker)
+[![Product Screenshot][product-screenshot]](https://github.com/longpdo/stock-ticker)
 
 `stock-ticker.py` is a python script using the Yahoo Finance API v7 as a data source. Major stock indices and currencies are printed out by standard and is then followed by the stock symbols provided by the user. The script will run every 5 minutes.
 
@@ -117,18 +117,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 * Yahoo Finance API v7
 * [pandas](https://pandas.pydata.org/)
 * [colorama](https://pypi.org/project/colorama/)
-
-<!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/longpdo/stock-ticker.svg?style=flat-square
-[contributors-url]: https://github.com/longpdo/stock-ticker/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/longpdo/stock-ticker.svg?style=flat-square
-[forks-url]: https://github.com/longpdo/stock-ticker/network/members
-[stars-shield]: https://img.shields.io/github/stars/longpdo/stock-ticker.svg?style=flat-square
-[stars-url]: https://github.com/longpdo/stock-ticker/stargazers
-[issues-shield]: https://img.shields.io/github/issues/longpdo/stock-ticker.svg?style=flat-square
-[issues-url]: https://github.com/longpdo/stock-ticker/issues
-[license-shield]: https://img.shields.io/github/license/longpdo/stock-ticker.svg?style=flat-square
-[license-url]: https://github.com/longpdo/stock-ticker/blob/master/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/longpdo
-[product-screenshot]: images/example.gif
