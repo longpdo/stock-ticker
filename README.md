@@ -57,7 +57,7 @@ brew install python
 For Linux and Windows refer to [this](https://realpython.com/installing-python/).
 
 ### Installation
-1. Clone the stock-ticker
+1. Clone the repository
 ```sh
 git clone https://github.com/longpdo/stock-ticker.git
 ```
