@@ -49,19 +49,22 @@ For Linux and Windows refer to [this](https://realpython.com/installing-python/)
 
 ### Installation
 
-1: Clone the repository
+1: Fork the repository (using the `Fork` button at the top)
+
+2: Clone the repository
 
 ```sh
-git clone https://github.com/longpdo/stock-ticker.git
+# Replace {YOUR_USERNAME} with your actual username
+git clone https://github.com/{YOUR_USERNAME}/stock-ticker.git
 ```
 
-2: Change directory into stock-ticker
+3: Change directory into stock-ticker
 
 ```sh
 cd stock-ticker
 ```
 
-3: Install python requirements
+4: Install python requirements
 
 ```sh
 pip3 install -r requirements.txt
@@ -103,7 +106,7 @@ GOOG
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
